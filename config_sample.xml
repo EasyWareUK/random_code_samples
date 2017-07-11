@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.easyware.phonereminder"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Phone Reminder</name>
+
+    <description>
+       The Free Reminders app 
+    </description>
+
+    <author href="http://www.web-reminder.com" email="victor@easyware.co.uk">
+        Victor Amokeodo 
+    </author>
+
+    <!-- Define app icon for each platform. Prev: images/phone-banner.gif -->
+    <icon src="images/wrm_icon_3_96dpi.png" />
+
+    
+    <preference name="AndroidLaunchMode" value="singleTask" />
+	<preference name="android-minSdkVersion" value="11" />
+	<preference name="android-maxSdkVersion" value="19" />
+    <!--
+		Define access to external domains.
+		<access /> - a blank access tag denies access to all external resources.
+		<access origin="*" /> - a wildcard access tag allows access to all external resource.
+		Otherwise, you can specify specific domains:
+	-->
+    <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
+	<access origin="http://www.web-reminder.com" />
+
+	
+	<!--	
+	<feature name="App">
+        <param name="android-package" value="org.apache.cordova.App" />
+    </feature>
+    <feature name="Vibration">
+        <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+	-->
+
+	 <!-- Device plugin -->  
+	<gap:plugin name="org.apache.cordova.device" version="0.2.8" />
+
+	<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.7.4">
+		<plugin name="LocalNotification" value="LocalNotification" />
+	</gap:plugin>
+	<gap:plugin name="info.ivanezko.phonegap.smsplugin" version="0.2.1" />
+	<gap:plugin name="com.phonegap.plugin.statusbar" /> <!-- Status bar plugin -->  
+	<gap:plugin name="com.verso.cordova.clipboard" /> <!-- Clipboard plugin -->  
+	<gap:plugin name="com.chariotsolutions.cordova.plugin.keyboard_toolbar_remover" /> <!-- Keyboard toolbar removal plugin -->  
+	<gap:plugin name="org.apache.cordova.splashscreen" /> <!-- Splashscreen plugin -->  
+	<gap:plugin name="org.apache.cordova.vibration" /> <!-- Vibration plugin -->
+	
+	<!--
+	https://github.com/DrewDahlman/Phonegap-LocalNotification/tree/master/cordova2.3%2B
+	IOS only
+	-->
+	<gap:plugin name="com.simplec.plugins.localnotification" version="0.3.5">
+		<param name="LocalNotification" value="LocalNotification" />
+	</gap:plugin>
+	
+	<!-- Android only...
+	<gap:plugin name="info.asankan.phonegap.smsplugin" version="0.1.0" />
+	-->
+
+	<!-- PUTTING IN THE PLUGIN STUFF, BELOW, STOPS deviceReady() FROM BEING CALLED ???? -->
+	<!--
+    <gap:plugin name="org.apache.cordova.network-information" />
+    -->
+
+</widget>

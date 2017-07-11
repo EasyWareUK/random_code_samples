@@ -1,0 +1,1902 @@
+#bottomArea{
+    position:absolute;
+    top:25px;
+}
+
+#playerObject {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    background-color:#ffffff;
+}
+#playerObject.fullscreen{
+    z-index: 0;
+}
+
+#TVArea.samsung-buggy-zindex .accedo-ui-dialog{
+    z-index: 51;
+}
+
+#TVArea.samsung-buggy-zindex > .accedo-ui-controller{
+    z-index: 1;
+}
+
+#TVArea.samsung-buggy-zindex .accedo-loading{
+    z-index: 999;
+}
+
+
+
+
+/* Component and container Showroom */
+#componentDemo{
+
+}
+
+#componentDemo #imageDemo #detachContainer.focus-trail{
+    background: #FFFF99;
+    
+}
+#componentDemo #detachContainer > *{
+    display: inline-block;
+}
+
+/* Alert Showroom */
+#DialogDemo {
+}
+
+/* Image Showroom */
+#imageDemo {
+}
+#imageDemo .image{
+    height: 150px;
+    width: 100px;
+}
+
+
+
+/* Bounded Label showroom */
+#boundedLabelDemo .text1{
+    position:absolute;
+    top:0px;
+}
+#boundedLabelDemo .text2{
+    position:absolute;
+    top:100px;
+}
+#boundedLabelDemo .text3{
+    position:absolute;
+    top:200px;
+}
+#boundedLabelDemo .text4{
+    position:absolute;
+    top:300px;
+}
+#boundedLabelDemo .row1{
+    position:absolute;
+    top:30px;
+}
+#boundedLabelDemo .row2{
+    position:absolute;
+    top:130px;
+}
+#boundedLabelDemo .row3{
+    position:absolute;
+    top:230px;
+}
+#boundedLabelDemo .row4{
+    position:absolute;
+    top:330px;
+}
+#boundedLabelDemo .row5{
+    position:absolute;
+    top:430px;
+}
+#boundedLabelDemo .col1{
+    position:absolute;
+    left:0px;
+}
+#boundedLabelDemo .col2{
+    position:absolute;
+    left:70px;
+}
+#boundedLabelDemo .col3{
+    position:absolute;
+    left:140px;
+}
+
+#boundedLabelDemo .boundedLabel{
+    width: 200px;
+    height: 18px;
+    background-color: red;
+}
+
+#boundedLabelDemo .marqueeLabel{
+    width: 400px;
+    height: 18px;
+    background-color: red;
+}
+
+/* Input Field Showroom */
+#inputFieldDemo {
+}
+#inputFieldDemo .accedo-ui-layout-linear-element{
+    padding-bottom: 5px;
+}
+#inputFieldDemo .accedo-ui-keyboard{
+    position: static;
+}
+#inputFieldDemo .maxLength10{
+    display: inline-block;
+}
+#inputFieldDemo .maxLength50{
+    display: inline-block;
+}
+
+/* Input Field Showroom */
+.inputDemo {
+}
+.inputDemo .accedo-ui-layout-linear-element{
+    padding-bottom: 5px;
+}
+.inputDemo .accedo-ui-keyboard{
+    position: static;
+}
+.inputDemo .maxLength10{
+    display: inline-block;
+}
+.inputDemo .maxLength50{
+    display: inline-block;
+}
+
+/* Check Box Showroom */
+#checkBoxDemo .accedo-ui-label{
+    margin-left: 150px;
+}
+#checkBoxDemo .accedo-ui-checkbox span.checked{
+    background:url(../../image/960x540/tick.png);
+}
+
+/* Scroll Label Demo */
+#scrollableLabelDemo #scrollLabelBar{
+    position:absolute;
+    left:380px;
+    top: 50px;
+    width: 20px;
+    height: 200px;
+    background-color: black;
+}
+#scrollableLabelDemo .accedo-ui-scrollableLabel{
+    background-color:#CCC;
+    width:400px;
+    height:300px;
+    border:0px solid transparent;
+}
+#scrollableLabelDemo .accedo-ui-scrollableLabel.focused{
+    background-color:#FFE;
+}
+
+/*Scrollable Container*/
+#scrollableContainerDemo #scrollableContainer{
+    position:absolute;
+    width:600px;
+    height:500px;
+    overflow:hidden;
+}
+#scrollableContainerDemo #scrollable{
+    width:100%;
+    position:absolute;
+}
+#scrollableContainerDemo .scrollableContainerimg1{
+    width:214px;
+    height:317px;
+}
+#scrollableContainerDemo #scrollContainerBar{
+    position:absolute;
+    left:620px;
+    height:500px;
+}
+#scrollableContainerDemo .accedo-ui-scrollbar-linear-v.focused .nodeTable .nodeMiddle{
+    background-color:pink;
+}
+
+
+/* List Showroom */
+#horizontalList .accedo-ui-button{
+    height: 160px;
+    width: 107px;
+    padding: 0;
+    margin: 0;
+}
+#verticalList .accedo-ui-button{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    padding: 0;
+    margin: 0;
+}
+#controlPanel{
+    position:absolute;
+    left:-380px;
+}
+
+#controlPanel .largeButton{
+    height: 50px;
+    width: 200px;
+    background-color: blue;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+#controlPanel .largeButton.focused{
+    background-color: green;
+}
+#controlPanel .row0{
+    position: absolute;
+    top: 270px;
+}
+#controlPanel .row1{
+    position: absolute;
+    top: 340px;
+}
+#controlPanel .row2{
+    position: absolute;
+    top: 400px;
+}
+#controlPanel .row3{
+    position: absolute;
+    top: 460px;
+}
+#controlPanel .col0{
+    position: absolute;
+    left: 155px;
+}
+#controlPanel .col1{
+    position: absolute;
+    left: 405px;
+}
+#controlPanel .serverText {
+    position:absolute;
+    left:155px;
+    top:470px;
+    width: 200px;
+}
+/* List showroom
+    -> Horizontal List */
+#listDemo1 #horizontalList{
+    width:360px;
+}
+#horizontalList{
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    height: 210px;
+    width: 596px;
+    background-color: red;
+}
+#horizontalList.focus-trail ,#horizontalList.focused{
+    background-color: yellow;
+}
+#horizontalList .sampleButton{
+    height:30px;
+}
+
+.scrollbarHorizontal{
+    position: absolute;
+    left: 9px;
+    top: 183px;
+    width:560px;
+    height:20px;
+    background-color: black;
+}
+/* List showroom
+    -> Vertical List */
+#verticalList{
+    position: absolute;
+    left: 20px;
+    top: 220px;
+    height: 290px;
+    width: 58px;
+    background-color: red;
+}
+#verticalList.focused{
+    background-color: yellow;
+}
+#verticalList .accedo-ui-layout-linear-v > *{
+    float: left;
+}
+
+.scrollbarVertical{
+    position: absolute;
+    left: 120px;
+    top: 220px;
+    width:20px;
+    height:200px;
+    background-color: black;
+}
+
+/* Grid Showroom */
+#gridShowroom img{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    float: left;
+}
+#gridShowroom .accedo-ui-button , #gridDemo4 .accedo-ui-button,#gridDemo5 .accedo-ui-button{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    display:block;
+    padding: 0;
+    margin: 0;
+}
+
+#gridShowroom .largeButton,#gridDemo4 .largeButton,#gridDemo5 .largeButton{
+    height: 50px;
+    width: 200px;
+    background-color: blue;
+    float: left;
+    padding: 0;
+    margin: 5px;
+}
+#gridShowroom .row0{
+    position: absolute;
+    top: 270px;
+}
+#gridShowroom .row1{
+    position: absolute;
+    top: 340px;
+}
+#gridShowroom .row2{
+    position: absolute;
+    top: 400px;
+}
+#gridShowroom .row3{
+    position: absolute;
+    top: 460px;
+}
+#gridShowroom .col0{
+    position: absolute;
+    left: 50px;
+}
+#gridShowroom .col1{
+    position: absolute;
+    left: 300px;
+}
+
+#gridShowroom .accedo-ui-grid-element .accedo-ui-button.focused,#gridShowroom .accedo-ui-grid-element.selected .accedo-ui-button.focused, #gridDemo3 .accedo-ui-grid-element.selected .accedo-ui-button.focused, #gridDemo4 .accedo-ui-grid-element.selected .accedo-ui-button.focused, #gridDemo2 .accedo-ui-grid-element.selected .accedo-ui-button.focused, #gridDemo1 .accedo-ui-grid-element.selected .accedo-ui-button.focused,#gridDemo5 .accedo-ui-grid-element.selected .accedo-ui-button.focused{
+    background-color: yellow;
+}
+#gridShowroom .accedo-ui-grid-element.selected .accedo-ui-button, #gridDemo3 .accedo-ui-grid-element.selected .accedo-ui-button, #gridDemo4 .accedo-ui-grid-element.selected .accedo-ui-button,#gridDemo2 .accedo-ui-grid-element.selected .accedo-ui-button,#gridDemo1 .accedo-ui-grid-element.selected .accedo-ui-button,#gridDemo5 .accedo-ui-grid-element.selected .accedo-ui-button{
+    background-color: pink;
+}
+#gridShowroom .focused .accedo-ui-grid-element.selected .accedo-ui-button, #gridDemo3 .focused .accedo-ui-grid-element.selected .accedo-ui-button ,#gridDemo4 .focused .accedo-ui-grid-element.selected .accedo-ui-button,#gridDemo5 .focused .accedo-ui-grid-element.selected .accedo-ui-button,#gridDemo2 .focused .accedo-ui-grid-element.selected .accedo-ui-button,#gridDemo1 .focused .accedo-ui-grid-element.selected .accedo-ui-button{
+    background-color: red;
+}
+
+#gridShowroom {
+    overflow: hidden;
+}
+#gridShowroom .statusText {
+    position:absolute;
+    left:200px;
+    top:230px;
+}
+#gridShowroom .serverText {
+    position: absolute;
+    left: 50px;
+    top: 463px;
+    width: 250px;
+}
+/* Grid showroom
+    -> Vertical Grid */
+#gridShowroom #GridVertical{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 210px;
+    width: 150px;
+}
+
+#grid2 #gridShowroom #GridVertical{
+    height: 253px;
+}
+#grid2 #gridShowroom #GridHorizontal{
+    width: 200px;
+}
+#gridShowroom .scrollbarVertical, #gridDemo3 .scrollbarVertical{
+    position:absolute;
+    left:170px;
+    top:10px;
+    width:20px;
+    height:200px;
+    background-color: black;
+}
+/* Grid showroom
+    -> Horizontal Grid */
+#gridShowroom #GridHorizontal,#gridDemo3 #GridHorizontal{
+    position: absolute;
+    left: 300px;
+    top: 10px;
+    height: 100px;
+    width: 250px;
+}
+#gridShowroom .scrollbarHorizontal,#gridDemo3 .scrollbarHorizontal {
+    position:absolute;
+    left:300px;
+    top:180px;
+    width:200px;
+    height:20px;
+    background-color: black;
+}
+#grid1 #GridVertical .accedo-ui-grid-element,#gridDemo3 #GridVertical .accedo-ui-grid-element,#gridDemo1 #GridHorizontal .accedo-ui-grid-element{
+    border: solid 1px;
+}
+#grid1 #GridVertical .grid-small, #gridDemo3 #GridVertical .grid-small{
+    width: 25px !important;
+    height: 25px !important;
+    font-size: 10px !important  ;
+}
+#gridDemo3 #GridVertical{
+    position: absolute;
+    left: 10px;
+    top: 109px;
+    height: 267px;
+    width: 150px;
+}
+#gridDemo3 .scrollbarVertical {
+    position: absolute;
+    left: 120px;
+    top: 108px;
+    width: 20px;
+    height: 266px;
+    background-color: black;
+}
+#gridDemo4 #GridVertical{
+    position: absolute;
+    left: 10px;
+    top: 168px;
+    height: 253px;
+    width: 150px;
+}
+#gridDemo5 #GridVertical{
+    position: absolute;
+    left: 10px;
+    top: 168px;
+    height: 150px;
+    width: 150px;
+}
+#gridDemo4 .scrollbarVertical{
+    left: 120px;
+    top: 170px;
+    width: 20px;
+    height: 250px;
+}
+#gridDemo5 .scrollbarVertical{
+    left: 167px;
+    top: 170px;
+    width: 20px;
+    height: 100px;
+}
+#gridDemo2 #GridHorizontal{
+    top: 120px;
+    left:10px;
+    position: absolute;
+    height: 60px;
+    width: 580px;
+}
+#gridDemo1 .scrollbarHorizontal{
+    top: 170px;
+    width:395px;
+}
+ #gridDemo1 #GridHorizontal .grid-small{
+    width: 40px !important;
+    height: 20px !important;
+    font-size: 10px !important  ;
+}
+#gridDemo2 #GridHorizontal .accedo-ui-button{
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 10px !important  ;
+}
+#gridDemo2 .scrollbarHorizontal{
+    width:580px;
+}
+#gridDemo2 #pressPanel ,#gridDemo1 #pressPanel{
+    position: absolute;
+    top: 230px;
+    left: 10px;
+}
+#gridDemo1 #GridHorizontal{
+    position: absolute;
+    left: 11px;
+    top: 52px;
+    width: 395px;
+    height: 150px;
+}
+/* Local Storage Showroom */
+#localStorageDemo {
+}
+#localStorageDemo .statusText{
+    position:absolute;
+    left:20px;
+    top:200px;
+}
+#localStorageDemo .row1{
+    position:absolute;
+    top:20px;
+}
+#localStorageDemo .row2{
+    position:absolute;
+    top:70px;
+}
+#localStorageDemo .row3{
+    position:absolute;
+    top:120px;
+}
+#localStorageDemo .col1{
+    position:absolute;
+    left:0px;
+}
+#localStorageDemo .col2{
+    position:absolute;
+    left:220px;
+}
+#localStorageDemo .col3{
+    position:absolute;
+    left:440px;
+}
+
+/* Device Id Showroom */
+#deviceIdDemo .label{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 400px;
+}
+
+#deviceIdDemo .label.focused{
+    border: 1px solid;
+    border-color: blue;
+}
+
+
+/* Video Detail */
+#videoDetail .button{
+    position: absolute;
+    left: 430px;
+    top: 400px;
+    width: 194px;
+}
+#videoDetail .image{
+    position: absolute;
+    left: 430px;
+    top: 50px;
+    height: 300px;
+    width: 200px;
+    background-color: red;
+}
+#videoDetail .label01{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    height: 50px;
+    width: 380px;
+    background-color: pink;
+}
+#videoDetail .label02{
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    height: 250px;
+    width: 380px;
+    background-color: pink;
+}
+
+/* Video Player */
+#mediaList {
+    width: 500px;
+}
+
+
+
+
+
+
+/* Local Storage */
+#localStorage .btn01{
+    top: 0px;
+    left: 0px;
+}
+#localStorage .btn02{
+    top: 0px;
+    left: 100px;
+}
+#localStorage .btn03{
+    top: 50px;
+    left: 0px;
+}
+#localStorage .btn04{
+    top: 50px;
+    left: 100px;
+}
+#localStorage #localStorageKeyArea{
+    position: absolute;
+    left: 0px;
+    top: 199px;
+    height: 100px;
+    width: 660px;
+    border-top: 1px #333333 solid;
+}
+#localStorage #localStorageValueArea{
+    position: absolute;
+    left: 0px;
+    top: 299px;
+    height: 239px;
+    width: 660px;
+    border-top: 1px #333333 solid;
+}
+#localStorage #contentArea{
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    height: 199px;
+    width: 459px;
+    border-left: 1px #333333 solid;
+    border-bottom: 1px #333333 solid;
+}
+
+
+/* Movie Screen */
+#HUDcontrol{
+    position: absolute;
+    width: 860px;
+    height: 115px;
+    left: 100px;
+    top: 400px;
+    background-color: yellow;
+    z-index:9999999999;
+}
+
+#HUDcontrol .button{
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+#HUDcontrol .button.focused{
+    background-color: red;
+}
+#HUDcontrol .button.rewind{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+#HUDcontrol .button.play{
+    position: absolute;
+    left: 110px;
+    top: 10px;
+}
+#HUDcontrol .button.pause{
+    position: absolute;
+    left: 210px;
+    top: 10px;
+}
+#HUDcontrol .button.stop{
+    position: absolute;
+    left: 310px;
+    top: 10px;
+}
+#HUDcontrol .button.forward{
+    position: absolute;
+    left: 410px;
+    top: 10px;
+}
+#HUDcontrol .label{
+    font-size: 14px;
+    color: blue;
+    font-family: Trajan Pro;
+    font-weight: bold;
+    line-height: 20px;
+}
+#HUDcontrol .label.timeLabel{
+    position: absolute;
+    left: 742px;
+    top: 10px;
+}
+
+
+
+/*progress bar */
+#timeline{
+    position: absolute;
+    width: 442px;
+    height: 12px;
+    left: 20px;
+    top: 100px;
+}
+
+#timeline1{
+    position: absolute;
+    width: 442px;
+    height: 30px;
+    left: 20px;
+    top: 150px;
+}
+
+#timeline2{
+    position: absolute;
+    width: 442px;
+    height: 12px;
+    left: 20px;
+    top: 220px;
+}
+
+#timeline .accedo-ui-progressBar-pointer{
+    background: url(../../image/960x540/point.png);
+    height: 13px;
+    width: 13px;
+}
+#timeline .accedo-ui-progressBar-playBar-front,#timeline2 .accedo-ui-progressBar-playBar-front{
+    width:20px;
+    background:url(../../image/960x540/progressbar/front.png) left;
+}
+#timeline .accedo-ui-progressBar-playBar-middle,#timeline2 .accedo-ui-progressBar-playBar-middle{
+    background:url(../../image/960x540/progressbar/mid.png);
+}
+#timeline .accedo-ui-progressBar-playBar-end,#timeline2 .accedo-ui-progressBar-playBar-end{
+    width:20px;
+    background:url(../../image/960x540/progressbar/end.png) right;
+}
+
+#timeline .accedo-ui-progressBar-background,#timeline2 .accedo-ui-progressBar-background{
+    background:url(../../image/960x540/progressbar/bg.png);
+}
+
+#timeline1 .accedo-ui-progressBar-background{
+    background:purple;
+}
+#timeline1 .accedo-ui-progressBar-playBar-middle{
+    background:green;
+
+}
+#timelineLabel{
+    position: absolute;
+    top: 68px;
+    left: 20px;
+}
+
+#timeline1Label{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+
+#timeline2Label{
+    position: absolute;
+    top: 190px;
+    left: 20px;
+}
+
+#currentTime{
+    position: absolute;
+    top: 260px;
+    left: 30px;
+}
+
+/*Keyboard*/
+.space-button{
+    width: 50px;
+    height: 50px;
+    background:url('../../image/960x540/keyboard/space_btn.png') no-repeat;
+
+}
+.space-button.focused{
+    background:url('../../image/960x540/keyboard/space_btn_focus.png') no-repeat;
+}
+.del-button{
+    width: 50px;
+    height: 50px;
+    background:url('../../image/960x540/keyboard/del_btn.png') no-repeat;
+
+}
+.del-button.focused{
+    background:url('../../image/960x540/keyboard/del_btn_focus.png') no-repeat;
+}
+#keyboardView3{
+    top:280px;
+    left:10px;
+}
+
+#keyboardArea1,#keyboardArea2{
+    top:30px;
+    left:10px;
+}
+
+.accedo-ui-keyboard-2colbutton {
+    line-height: 48px;
+    font-size:30px;
+    float: left;
+    width: 106px;
+    height: 50px;
+    text-align: center;
+    background-color:#ff9900;
+}
+.accedo-ui-keyboard-2rowbutton {
+    line-height: 48px;
+    font-size:30px;
+    float: left;
+    width: 50px;
+    height: 110px;
+    text-align: center;
+    background-color:#ff9900;
+}
+.accedo-ui-keyboard-3colbutton {
+    line-height: 48px;
+    font-size:30px;
+    float: left;
+    width: 165px;
+    height: 50px;
+    text-align: center;
+    background-color:#ff9900;
+}
+#keyboardArea3_2_0{
+    margin-left:-111px;
+}
+#french_overlay{
+    background:pink;
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:555;
+}
+.accedo-ui-keyboard-left-button{
+    background-image:url(../../image/960x540/keyboard/left_arrow.png);
+    background-repeat:no-repeat;
+}
+.accedo-ui-keyboard-right-button{
+    background-image:url(../../image/960x540/keyboard/right_arrow.png);
+    background-repeat:no-repeat;
+}
+
+/**Loading*/
+
+#loading-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1280px;
+    height: 720px;
+}
+.loadingOverlayBg {
+    position: absolute;
+    left: 540px;
+    top: 275px;
+    width: 196px;
+    height: 111px;
+    background: url("../../image/960x540/loadingOverlay/loadingOverlayBg.png") no-repeat;
+    z-index: 1000;
+}
+.loadingCircle {
+    position: relative;
+    left: 82px;
+    top: 25px;
+    width: 34px;
+    height: 34px;
+}
+/*grid carousel*/
+#GridCarouselVertical{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 865px;
+    width: 360px;
+    background:pink;
+    overflow:hidden;
+}
+#gridCarouselShowroom .scrollbarCarouselVertical {
+    position:absolute;
+    left:370px;
+    top:10px;
+    width:20px;
+    height:350px;
+    background-color: black;
+}
+.gridCarouselItem{
+    width:112px;
+    height:165px;
+    border-width:3px;
+    border-style:solid;
+    border-color:transparent;
+}
+.gridCarouselItem.focused{
+    border-color: yellow;
+}
+.accedo-ui-grid.focused .accedo-ui-grid-element.selected .gridCarouselItem{
+    border-color: red;
+}
+.accedo-ui-grid .accedo-ui-grid-element.selected .gridCarouselItem{
+    border-color: blue;
+}
+
+.gridCarouselBtn{
+    width:107px;
+    height:160px;
+}
+.gridCarouselBtn.focused{
+    opacity:0.5;
+}
+#GridCarouselHorizontal{
+    position:relative;
+    width:472px;
+    height:342px;
+}
+
+#mediaList.focused .accedo-ui-layout-linear-element.selected .accedo-ui-button{
+    background-color:green;
+}
+
+/*List*/
+#infoPanel{
+    position:absolute;
+    top:300px;
+    left:255px;
+}
+#listDemo3 #verticalList{
+    top:30px;
+    height:505px;
+}
+
+#listDemo3 #controlPanel,#listDemo4 #controlPanel{
+    left: -150px;
+    top: -225px;
+}
+
+#listDemo4 #verticalList{
+    top:20px;
+    height:167px;
+}
+
+#listDemo1 .scrollbarHorizontal{
+    left:0px;
+    top:246px;
+    width:360px;
+}
+
+#listDemo3 .scrollbarVertical{
+    top:30px;
+    height:505px;
+}
+#pressPanel{
+    position: absolute;
+    top: 50px;
+    left: 250px;
+}
+
+#inputKeyboard4_2_0,#inputKeyboard2_2_0{
+    margin-left:-115px;
+}
+
+
+
+
+
+
+/* LoveLive  */
+
+
+body{
+    font-family: 'LG Display10_Eng';
+}
+
+
+.dialogHelpText{
+	color:white;
+	font-size:18px;
+	left: 200px;
+    top: 100px;
+    height: 400px;
+    width: 800px;
+    border-style:solid;
+	border-color:gray;
+	border-width:1px;
+	padding:10px;
+}
+
+
+.dialogLiveFeedHelpText{ 
+	color:white;
+	font-size:20px;
+	left: 440px;
+    top: 200px;
+    height: 200px;
+    width: 400px;
+    border-style:solid;
+	border-color:gray;
+	border-width:1px;
+	padding:40px 5px 5px 60px;
+	vertical-align:middle;
+}
+
+
+.dialogOverlayRoot{
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, .8);
+}
+
+/* Main page */
+#main, .accedo-loading {
+    left: 0;
+    top: 0;
+    height: 720px;
+    width: 1280px;
+}
+#mainMenuPanel {
+    z-index: 1;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 539px;
+    width: 299px;
+    border-bottom: 1px #333333 solid;
+    background-color:#ffffff;
+}
+#mainMenu {
+    width: 279px;
+    display: inline-block;
+}
+#mainMenu .accedo-ui-layout-linear-element{
+    border-width: 0px;
+}
+#mainMenu .accedo-ui-layout-linear-element .accedo-ui-label{
+    text-align: right;
+    display: block;
+}
+
+#mainMenuScrollbar{
+    height: 540px;
+}
+
+#rightArea {
+    z-index: 0;
+    position: relative;
+    left: 100px;
+    top: 0px;
+    height: 539px;
+    width: 659px;
+    border-right: 1px #333333 solid;
+    border-bottom: 1px #333333 solid;
+    background-color:#ffffff;
+}
+
+.bottomMargin{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+#startPage .bottomMenu{
+    position: absolute;
+    left: 0px;
+    top: 550px;
+    height: 220px;
+    width: 1280px;
+    text-align:center;
+    /*background: rgba(0, 0, 0, .6);*/
+    background-color: black;
+}
+
+#startPage .featStartPageBtn{
+    left: 125px;
+}
+
+#startPage .catStartPageBtn{
+    left: 475px;
+}
+
+#startPage .MyLoveStartPageBtn{
+    left: 825px;
+}
+
+#startPage .startPageBtnAll{
+    position: absolute;
+    top: 605px;
+    height: 50px;
+    width: 325px;
+    font-size:30px;
+    text-align:center;
+    /*color: gray;*/
+    color: #464646;
+    background: rgba(0, 0, 0, 0); 
+}
+
+
+#startPage .startPageBtnAll.focused{
+	color:white;
+    font-size:60px;
+}
+
+
+
+#imageDemo.focused{
+    background-color: yellow;
+}
+
+#imageDemo #imageDemo #detachContainer.focus-trail{
+    background: #FFFF99;
+    
+}
+
+.img01X{ 
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 720px;
+    width: 1280px;
+    
+}
+
+
+
+/* #catPage .PageTitle{  */
+.PageTitle{ 
+    position: absolute;
+    left: 75px;
+    top: 55px;
+    height: 50px;
+    width: 300px;
+    
+    font-size:50px;
+    float: left;
+    text-align: left;
+    color: white; 
+    background: rgba(0, 0, 0, 0); 
+}
+
+
+.PageHeader{ 
+    position: absolute;
+    left: 75px;
+    top: 130px;
+    height: 30px;
+    width: 350px;
+    
+    font-size:25px;
+    float: left;
+    text-align: left;
+    color: white; 
+    background: rgba(0, 0, 0, 0); 
+}
+
+
+
+
+/*****  CONCERTS MAIN PAGE *****/
+.concertsTitle{ 
+    position: absolute;
+    left: 160px;
+    top: 25px;
+    height: 50px;
+    width: 300px;
+    
+    font-size:50px;
+    float: left;
+    text-align: left;
+    color: white; 
+    background: rgba(0, 0, 0, 0); 
+}
+
+
+.concertsTitleIcon{
+    position: absolute;
+    left: 75px;
+    top: 25px;
+    height: 53px;
+    width: 80px;
+}
+
+.concertsHeader1{ 
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    height: 20px;
+    width: 50px;
+    
+    font-size:18px;
+    float: left;
+    text-align: left;
+    color: white; 
+    background: rgba(0, 0, 0, 0); 
+}
+
+.concertsHeader2{ 
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    height: 20px;
+    width: 150px;
+    
+    font-size:18px;
+    float: left;
+    text-align: left;
+    color: white; 
+    background: rgba(0, 0, 0, 0); 
+}
+
+.concertThum01{
+    left: 82px;
+    top: 134px;
+}
+.concertThum02{ 
+    left: 82px;
+    top: 250px;
+}
+.concertThum03{ 
+    left: 82px;
+    top: 370px;
+}
+.concertThum04{ 
+    left: 82px;
+    top: 490px;
+}
+.concertThum05{
+    left: 660px;
+    top: 134px;
+}
+.concertThum06{ 
+    left: 660px;
+    top: 250px;
+}
+.concertThum07{ 
+    left: 660px;
+    top: 370px;
+}
+.concertThum08{ 
+    left: 660px;
+    top: 490px;
+}
+.concertThumAll{
+    position: absolute;
+    height: 113px;
+    width: 197px;
+    background-repeat:no-repeat !important;
+	border-style:solid;
+	border-color:transparent;
+	border-width:4px;
+}
+.concertThumAll.focused{
+	border-style:solid;
+	border-color:white;
+	border-width:4px;
+}
+
+.concertTitle1{ 
+	left: 290px;
+    top: 134px;
+}
+.concertTitle2{ 
+	left: 290px;
+    top: 250px;
+}
+.concertTitle3{ 
+	left: 290px;
+    top: 370px;
+}
+.concertTitle4{ 
+	left: 290px;
+    top: 490px;
+}
+.concertTitle5{ 
+	left: 870px;
+    top: 134px;
+}
+.concertTitle6{ 
+	left: 870px;
+    top: 250px;
+}
+.concertTitle7{ 
+	left: 870px;
+    top: 370px;
+}
+.concertTitle8{ 
+	left: 870px;
+    top: 490px;
+}
+.concertTitleAll{
+	position: absolute;
+	font-size:22px;
+    text-align: left;
+    color: white;
+    width:400px;
+    overflow:hidden;
+}
+
+
+
+.concertDate1{  
+	left: 290px;
+    top: 154px;
+}
+.concertDate2{ 
+	left: 290px;
+    top: 270px;
+}
+.concertDate3{ 
+	left: 290px;
+    top: 390px;
+}
+.concertDate4{ 
+	left: 290px;
+    top: 510px;
+}
+.concertDate5{ 
+	left: 870px;
+    top: 154px;
+}
+.concertDate6{ 
+	left: 870px;
+    top: 270px;
+}
+.concertDate7{ 
+	left: 870px;
+    top: 390px;
+}
+.concertDate8{ 
+	left: 870px;
+    top: 510px;
+}
+.concertDateAll{
+	position: absolute;
+	font-size:18px;
+    text-align: left;
+    color: gray;
+    width:300px;
+	overflow:hidden;
+}
+
+
+
+.concertDesc1{  
+	left: 290px;
+    top: 174px;
+}
+.concertDesc2{ 
+	left: 290px;
+    top: 290px;
+}
+.concertDesc3{ 
+	left: 290px;
+    top: 410px;
+}
+.concertDesc4{ 
+	left: 290px;
+    top: 530px;
+}
+.concertDesc5{ 
+	left: 870px;
+    top: 174px;
+}
+.concertDesc6{ 
+	left: 870px;
+    top: 290px;
+}
+.concertDesc7{ 
+	left: 870px;
+    top: 410px;
+}
+.concertDesc8{ 
+	left: 870px;
+    top: 530px;
+}
+.concertDescAll{
+	position: absolute;
+	font-size:18px;
+    text-align: left;
+    width:400px;
+    height:65px;
+    word-wrap: break-word;
+    overflow:hidden;
+    color:white;
+    /*background: red;*/
+}
+
+/***** CATEGORIES MAIN PAGE *****/
+
+.headerRule{
+    position: absolute;
+    left: 75px;
+    top: 157px;
+    height: 2px;
+    width: 700px;
+    border: 0;
+  	background-color: white;
+}
+
+
+.catThum01{
+    top: 191px;
+}
+.catThum02{ 
+    top: 347px;
+}
+.catThum03{ 
+    top: 505px;
+} 
+
+.catThumbAll{
+    position: absolute;
+    left: 75px;
+    height: 144px;
+    width: 255px;
+    
+    background-repeat:no-repeat;
+    border-style:solid;
+	border-color:transparent;
+	border-width:5px;
+	
+}
+.catThumbAll.focused{
+	border-color:white;
+}
+
+
+.catTitle1{
+    top: 191px;
+}
+
+.catTitle2{
+    top: 347px;
+}
+
+.catTitle3{
+    top: 505px;
+}
+
+.catTitleAll{
+    position: absolute;
+    left: 350px;
+    height: 20px;
+    width: 350px;
+    font-size:22px;
+    text-align: left;
+    color: white;
+    overflow:hidden;
+}
+
+
+
+.catDesc1{
+    top: 214px;
+}
+
+.catDesc2{
+    top: 368px;
+}
+
+.catDesc3{
+    top: 528px;
+}
+
+.catDescAll{
+    position: absolute;
+    left: 350px;
+    height: 110px;
+    width: 350px;
+    font-size:18px;
+    text-align: left;
+    color: white;
+}
+
+
+.catIcon01{
+    position: absolute;
+    left: 880px;
+    top: 154px;
+    height: 53px;
+    width: 80px;
+}
+.catIcon02{
+    position: absolute;
+    left: 880px;
+    top: 230px;
+    height: 53px;
+    width: 80px;
+}
+.catIcon03{
+    position: absolute;
+    left: 880px;
+    top: 300px;
+    height: 53px;
+    width: 80px;
+}
+.catIcon04{
+    position: absolute;
+    left: 880px;
+    top: 370px;
+    height: 53px;
+    width: 80px;
+}
+.catIcon05{
+    position: absolute;
+    left: 880px;
+    top: 440px;
+    height: 53px;
+    width: 80px;
+}
+
+
+.catMenuPos{ 
+    position: absolute;
+    left: 960px;
+    top: 160px;
+    height: 350px;
+    width: 300px;
+  
+    font-size:20px;
+    float: center;
+    text-align: center;
+    color: white; 
+   background: rgba(0, 0, 0, 0); 
+}
+
+
+.catMenuBtn.focused{
+	color:white;
+    font-size:200%;
+    background: rgba(0, 0, 0, 0); 
+}
+.catMenuBtn{
+    height: 70px;
+    width: 280px;
+    font-size:30px;
+    font-weight:bold;
+    color:gray;
+    text-align:left;
+    background: rgba(0, 0, 0, 0); 
+}
+
+
+
+/***** FEATURED MAIN PAGE *****/
+.watermark_img{
+    position: absolute;
+    left: 1150px;
+    top: 45px;
+    height: 53px;
+    width: 89px;
+}
+
+.back_img{
+    position: absolute;
+    left: 1150px;
+    top: 600px;
+    height: 17px;
+    width: 68px;
+}
+.back_img.focused{
+	border-style:solid;
+	border-color:white;
+	border-width:2px;
+}
+
+.watchNowFeatBtn{
+    position: absolute;
+    left: 30px;
+    top: 400px;
+    height: 42px;
+    width: 200px; 
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    
+    border: 1px solid;
+	border-color: black;
+	padding-top: 13px;
+}
+
+
+.featured_img{ 
+    position: absolute;
+    left: 15px;
+    top: 110px;
+    height: 377px;
+    width: 1280px;
+    
+    font-size:25px;
+    float: left;
+    text-align: left;
+    color: white; 
+    background: rgba(0, 0, 0, 0); 
+}
+
+
+
+
+
+#featThumbList{
+    position: absolute;
+    left: 132px;
+    top: 500px;
+    height: 143px;
+    width: 1000px;
+}
+
+.mediaListTemplate{
+	margin-right:15px;
+	margin-left:15px;	
+	/*padding-right:60px;*/
+}
+.mediaListTemplate.focused{
+	border-style:none;
+	border-width:0px;
+}
+
+/* OVERRIDE XDK.CSS */
+/*
+#featPage .accedo-ui-list .accedo-ui-layout-linear-element {
+  border-style:none;
+	border-width:0px;
+}
+*/
+.titleAll{
+    font-size:16px;
+    text-align: left;
+    color: white;
+    top: 610px;
+    height: 20px;
+    width: 197px;
+    
+}
+
+#featThumbList .thumbAll{
+	
+    height: 113px;
+    width: 197px;
+}
+/*
+.thumbAll.focused{
+	border-style:solid;
+	border-color:white;
+	border-width:3px;
+}
+*/
+/*
+#featThumbList.focused{
+	border-style:solid;
+	border-color:white;
+	border-width:5px;
+}
+*/
+
+/*
+.featThum01{
+    left: 132px;
+}
+.featThum02{ 
+    left: 470px;
+}
+.featThum03{ 
+    left: 845px;
+}
+*/
+.featThumbAll{
+	top: 490px;
+    height: 113px;
+    width: 197px;
+}
+
+/*
+.featTitle1{
+    left: 132px;
+}
+
+.featTitle2{
+    left: 470px;
+}
+
+.featTitle3{
+    left: 845px;
+}
+*/
+.featTitleAll{
+    position: absolute;
+    top: 610px;
+    height: 20px;
+    width: 350px;
+    font-size:16px;
+    text-align: left;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/***** PLAYLIST SCREEN *****/
+
+.playlistMenuBtn.focused{
+	color:white;
+    font-size:35px; 
+    font-weight:bold;
+    background: rgba(0, 0, 0, 0); 
+}
+.playlistMenuBtn{
+    height: 40px;
+    width: 500px;
+    font-size:25px;
+    color:gray;
+    text-align:left;
+    vertical-align:middle;
+    overflow:hidden;
+    /*text-overflow: ellipsis !important;*/
+    background: rgba(0, 0, 0, 0); 
+}
+
+.playlistMenuItem{
+	vertical-align:middle;
+}
+
+
+.playlistVideoBG{
+	position: absolute;
+	width: 570px;
+	height: 300px;
+	left: 75px;
+	top: 150px;
+	color: white;
+    background-color: black;
+}
+
+
+.mediaList{
+    position: absolute;
+    left: 750px;
+    top: 150px;
+}
+
+
+.smallControlsAll{
+    position: absolute;
+    top: 406px;
+    width: 40px;
+	height: 40px;
+}
+
+.smallControlsAll.focused {
+	border: 1px solid;
+	border-color: white;
+}
+
+
+
+.smallBackSkip{
+    left: 377px;
+}
+.smallRewind{
+    left: 420px;
+}
+.smallPause{
+    left: 463px;
+}
+.smallFF{
+    left: 506px;
+}
+.smallForwardSkip{
+    left: 549px;
+}
+
+
+
+.smallTimer{
+    position: absolute;
+    top: 390px;
+    left: 350px;
+    width: 200px;
+	height: 18px;
+	font-size:15px;
+	color:white;
+}
+        
+.fullconcertBtn{
+    position: absolute;
+    top: 406px;
+    left: 77px;
+    width: 192px;
+	height: 40px;
+	background: rgba(0, 0, 0, .6);
+	background:url(../../image/lovelive/icons/player/full-concert.gif);
+}
+      
+.smallFavBtn{
+    position: absolute;
+    top: 406px;
+    left: 550px;
+    width: 40px;
+	height: 40px;
+	background: rgba(0, 0, 0, .6);
+	background:url(../../image/lovelive/icons/player/no-fav.gif);
+}
+        
+.fullscreenBtn{
+    position: absolute;
+    top: 406px;
+    left: 600px;
+    width: 40px;
+	height: 40px;
+	background: rgba(0, 0, 0, .6);
+	background:url(../../image/lovelive/icons/player/full-screen.gif);
+}
+
+
+.video-buttonALL{
+    /*
+	color:          white;
+    background:     gray;
+    */
+    font-size:      14pt;
+    border:         0px;
+    /*line-height:    21pt;*/
+    display:        block;
+    /* padding:        2pt; */
+    margin:         1pt;
+}
+.video-buttonALL.focused {
+	border: 1px solid;
+	border-color: white;
+    /*
+	color:          gray;
+    background:     white;
+    */
+}
+
+
+/*****  OVERRIDE xdk.css *****/
+#artistesPlaylist .accedo-ui-list .accedo-ui-layout-linear-element.selected {
+	border-color: rgba(0, 0, 0, 0);	
+}
+
+
+
+
+
+/***** MORE.... *****/
+
+#imageDemo .buttonA1{
+    position: absolute;
+    left: 600px;
+    top: 50px;
+    height: 30px;
+    width: 250px;
+    color: white;
+    background-color: black;
+ 
+}
+#imageDemo .buttonA2{
+    position: absolute;
+    left: 600px;
+    top: 90px;
+    height: 30px;
+    width: 250px;
+    color: white;
+    background-color: black;
+}
+#imageDemo .buttonA1.focused{
+    color: black;
+    background-color: white;
+}
+#imageDemo .buttonA2.focused{
+    color: black;
+    background-color: white;
+}

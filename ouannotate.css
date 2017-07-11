@@ -1,0 +1,972 @@
+/*
+ * Whenever possible, markup for the Bookmarklet should be added to the #ouannotate-wrapper which serves as a namespace
+ * All elements used within the #ouannotate-wrapper need to be reset to a consistent base state to build upon
+ */
+html body div#ouannotate-wrapper div,
+html body div#ouannotate-wrapper span,
+html body div#ouannotate-wrapper a,
+html body div#ouannotate-wrapper form,
+html body div#ouannotate-wrapper label,
+html body div#ouannotate-wrapper input,
+html body div#ouannotate-wrapper select,
+html body div#ouannotate-wrapper option,
+html body div#ouannotate-wrapper textarea,
+html body div#ouannotate-wrapper button
+{
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	outline: none !important;
+
+	float: none !important;
+	clear: none !important;
+	position: static !important;
+	top: auto !important;
+	left: auto !important;
+	bottom: auto !important;
+	right: auto !important;
+
+	font-family: Tahoma, Lucida Grande, Arial, Helvetica, sans-serif !important;
+	font-size: 12px !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	line-height: 1 !important;
+	vertical-align: baseline !important;
+	text-decoration: none !important;
+	text-align: left !important;
+	text-indent: 0 !important;
+	text-transform: none !important;
+	color: #000 !important;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+	white-space: normal !important;
+
+	background: none !important;
+	visibility: visible !important;
+	z-index: 9998 !important;
+}
+
+html body div#ouannotate-wrapper div,
+html body div#ouannotate-wrapper form,
+html body div#ouannotate-wrapper select,
+html body div#ouannotate-wrapper option,
+html body div#ouannotate-wrapper textarea {
+	display: block !important;
+	width: auto !important;
+	height: auto !important;
+	max-width: none !important;
+	max-height: none !important;
+	overflow: visible !important;
+}
+
+html body div#ouannotate-wrapper span,
+html body div#ouannotate-wrapper label,
+html body div#ouannotate-wrapper input,
+html body div#ouannotate-wrapper button {
+	display: inline !important;
+}
+
+
+
+/*
+ * Toolbar styling
+ */
+
+html body div#ouannotate-wrapper #ouannotate-toolbar {
+	position:fixed !important;
+	bottom:0 !important;
+	left:0 !important;
+	width:100% !important;
+	z-index: 9999 !important;
+}
+
+ div#ouannotate-wrapper div#ouannotate-toolbar-inner-wrapper {
+	width: 704px !important;
+	height: 99px !important;
+	position: relative !important;
+	top: 0px !important;
+	left: 270px !important;
+	background:transparent url(../images/toolbar_background.png) no-repeat !important;
+	-webkit-border-top-left-radius: 11px;
+	-webkit-border-top-right-radius: 11px;
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-topleft: 11px;
+	-moz-border-radius-topright: 11px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-top-left-radius: 11px;
+	border-top-right-radius: 11px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	-moz-box-shadow: 0 0 5px 1px #1a1a1a;
+	-webkit-box-shadow: 0 0 5px 1px#1a1a1a;
+	box-shadow: 0 0 5px 1px #1a1a1a;
+}
+
+html body div#ouannotate-wrapper .ou-dialogue {
+	-webkit-border-top-left-radius: 11px;
+	-webkit-border-top-right-radius: 11px;
+	-webkit-border-bottom-right-radius: 11px;
+	-webkit-border-bottom-left-radius: 11px;
+	-moz-border-radius-topleft: 11px;
+	-moz-border-radius-topright: 11px;
+	-moz-border-radius-bottomright: 11px;
+	-moz-border-radius-bottomleft: 11px;
+	border-top-left-radius: 11px;
+	border-top-right-radius: 11px;
+	border-bottom-right-radius: 11px;
+	border-bottom-left-radius: 11px;
+	-moz-box-shadow: 0 0 5px 1px #1a1a1a;
+	-webkit-box-shadow: 0 0 5px 1px#1a1a1a;
+	box-shadow: 0 0 5px 1px #1a1a1a;
+}
+
+
+html body div#ouannotate-wrapper #ouannotate-toolbar-logo {
+	width: 114px !important;
+	height: 21px !important;
+	position: absolute !important;
+	top:9px !important;
+	left:549px !important;
+	background: transparent url(../images/oua_logo_toolbar.png) no-repeat !important;
+}
+
+html body div#ouannotate-wrapper #ouannotate-toolbar-close {
+	height:24px !important;
+	width: 24px !important;
+	position: absolute !important;
+	top: 8px !important;
+	left: 673px !important;
+	border-left: 1px solid #fff !important;
+}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-close a {
+		display:block !important;
+		height: 16px !important;
+		margin: 4px 0 0 6px !important;
+		cursor: pointer !important;
+		background: transparent url(../images/annotate_icon_close.png) no-repeat !important;
+	}
+	
+		html body div#ouannotate-wrapper #ouannotate-toolbar-close a:hover {
+			background-image: url(../images/annotate_icon_close_hover.png) !important;
+		}
+		
+		html body div#ouannotate-wrapper #ouannotate-toolbar-close a:active,
+		html body div#ouannotate-wrapper #ouannotate-toolbar-close a:focus  {
+			background-image: url(../images/annotate_icon_close_click.png) !important;
+		}
+
+html body div#ouannotate-wrapper #ouannotate-toolbar-comment {
+	position: absolute !important;
+	top:12px !important;
+	left:12px !important;
+	width: 292px !important;
+	height: 74px !important;
+	padding: 2px !important;
+}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-comment-field {
+		width: 290px !important;
+		height: 74px !important;
+		border: 1px solid rgb(153,153,153) !important;
+		border-top: 1px solid rgb(115,115,115) !important;
+		background-color: #fff !important;
+		overflow-y:scroll;
+	}
+
+html body div#ouannotate-wrapper #ouannotate-toolbar-visibility {
+	position: absolute !important;
+	top:38px !important;
+	left:308px !important;
+}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-visibility-field {
+		padding: 1px !important;
+		width: 76px !important;
+		height: 20px !important;
+		line-height: 20px !important;
+		background-color: #fff !important;
+	}
+
+html body div#ouannotate-wrapper #ouannotate-toolbar-tags {
+	position: absolute !important;
+	top:65px !important;
+	left:308px !important;
+	padding: 1px 1px 1px 4px !important;
+	background-color: #fff !important;
+}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-tags-field {
+		width: 71px !important;
+		height: 20px !important;
+		line-height: 20px !important;
+		color:#999 !important;
+		background-color: #fff !important;
+	}
+
+html body div#ouannotate-wrapper #ouannotate-toolbar-highlight-colour {
+	position: absolute !important;
+	top:11px !important;
+	left:396px !important;
+}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-highlight-colour label {
+		position: absolute !important;
+		top:2px !important;
+		left:0px !important;
+		width: 56px !important;
+		height:20px !important;
+		color: #fff !important;
+	}
+
+html body div#ouannotate-wrapper #ouannotate-toolbar-highlight-options {
+	width: 90px !important;
+	height: 20px !important;
+	position: absolute !important;
+	top:0px !important;
+	left:64px !important;
+}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-highlight-options .ouannotate-toolbar-highlight-option {
+		float:left !important;
+		margin-right:2px !important;
+        padding: 1px 2px !important;
+	}
+		html body div#ouannotate-wrapper #ouannotate-toolbar-highlight-options .ouannotate-toolbar-highlight-option input {
+			height:15px !important;
+			width: 15px !important;
+		}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-highlight-option-yellow {
+		background-color: #ffffaa !important;
+	}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-highlight-option-red {
+		background-color: #ffcdcf !important;
+	}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-highlight-option-blue {
+		background-color: #ceecff !important;
+	}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-highlight-option-transparent {
+		background-color: transparent !important;
+	}
+
+html body div#ouannotate-wrapper #ouannotate-toolbar-button {
+	width: 78px !important;
+	position: absolute !important;
+	top:12px !important;
+	left:306px !important;
+}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-button .ou-button {
+		font-size: 11px !important;
+		display: block !important;
+		cursor: pointer !important;
+		width: 78px !important;
+		height: 20px !important;
+		line-height: 19px !important;
+		vertical-align: middle !important;
+		color:white !important;
+		text-align: center !important;
+		background-color: #222222 !important;
+		border: 1px solid #cccccc !important;
+		border-radius: 4px !important;
+	}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-button .ou-button.bookmark {
+		background: #222222 url(../images/oua_bookmark_toolbar_button.png) 62px no-repeat !important;
+		text-indent: -10px !important;
+	}
+
+		html body div#ouannotate-wrapper #ouannotate-toolbar-button .ou-button.inactive {
+			color: #666 !important;
+		}
+
+		html body div#ouannotate-wrapper #ouannotate-toolbar-button .ou-button.active:hover {
+			text-decoration: underline !important;
+		}
+
+		html body div#ouannotate-wrapper #ouannotate-toolbar-button .ou-button.active:active {
+
+		}
+
+html body div#ouannotate-wrapper #ouannotate-toolbar-filters {
+	width: 299px !important;
+	height: 30px !important;
+	position: absolute !important;
+	top:37px !important;
+	left:394px !important;
+	border-top:1px solid #aaa !important;
+	border-bottom:1px solid #aaa !important;
+	padding-left:2px !important;
+}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-filters-label {
+		float:left !important;
+		width: 119px !important;
+		height: 23px !important;
+		margin-right:10px !important;
+		color: #fff !important;
+		margin-top: 7px !important;
+	}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-filters .ouannotate-toolbar-filter {
+		float: left !important;
+		height: 23px !important;
+	}
+	
+		html body div#ouannotate-wrapper #ouannotate-toolbar-filters #ouannotate-toolbar-filters-my {
+			width: 93px !important;
+		}
+		
+		html body div#ouannotate-wrapper #ouannotate-toolbar-filters #ouannotate-toolbar-filters-shared {
+			width: 69px !important;
+		}
+
+		html body div#ouannotate-wrapper #ouannotate-toolbar-filters .ouannotate-toolbar-filter .ouannotate-icon {
+			float: left !important;
+			width: 16px !important;
+			height: 23px !important;
+			margin-right:3px !important;
+			margin-top: 3px !important;
+			background: transparent no-repeat center center !important;
+		}
+
+			html body div#ouannotate-wrapper #ouannotate-toolbar-filters #ouannotate-toolbar-filters-my .ouannotate-icon {
+				background-image: url(../images/toolbar_my_comment_icon.png) !important;
+			}
+
+			html body div#ouannotate-wrapper #ouannotate-toolbar-filters #ouannotate-toolbar-filters-shared .ouannotate-icon {
+				background-image: url(../images/toolbar_sharedcomment_icon.png) !important;
+			}
+
+		html body div#ouannotate-wrapper #ouannotate-toolbar-filters .ouannotate-toolbar-filter label {
+			float: left !important;
+			height: 23px !important;
+			color: #fff !important;
+			margin-top: 8px !important;
+		}
+
+			html body div#ouannotate-wrapper #ouannotate-toolbar-filters-my label {
+				width: 20px !important;
+			}
+
+			html body div#ouannotate-wrapper #ouannotate-toolbar-filters-shared label {
+				width: 25px !important;
+			}
+
+		html body div#ouannotate-wrapper #ouannotate-toolbar-filters .ouannotate-toolbar-filter .ouannotate-field {
+			float: left !important;
+			margin-right: 6px !important;
+			padding: 2px 0 0 !important;
+		}
+
+			html body div#ouannotate-wrapper #ouannotate-toolbar-filters .ouannotate-toolbar-filter .ouannotate-field input {
+				width: 15px !important;
+				height: 15px !important;
+				margin-top: 6px !important;
+			}
+
+html body div#ouannotate-wrapper #ouannotate-toolbar-links {
+	position: absolute !important;
+	top:75px !important;
+	left:396px !important;
+	width: 299px !important;
+}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-links-manage {
+		width: 106px !important;
+		height: 21px !important;
+		float:left !important;
+	}
+
+		html body div#ouannotate-wrapper #ouannotate-toolbar-links-manage a {
+			display:block;
+			width: 106px !important;
+			height: 21px !important;
+			color: #fff !important;
+		}
+
+			html body div#ouannotate-wrapper #ouannotate-toolbar-links-manage a:hover {
+				text-decoration: underline !important;
+			}
+
+			html body div#ouannotate-wrapper #ouannotate-toolbar-links-manage a:active {
+				text-decoration: underline !important;
+			}
+
+	html body div#ouannotate-wrapper #ouannotate-toolbar-links-help {
+		float:right !important;
+		width: 140px !important;
+		position:relative !important;
+		margin-right: 5px !important;
+	}
+
+		html body div#ouannotate-wrapper #ouannotate-toolbar-links-help a {
+			display:block;
+			width: 140px !important;
+			height: 21px !important;
+			color: #fff !important;
+		}
+
+		html body div#ouannotate-wrapper #ouannotate-toolbar-links-help-image {
+			background: url("../images/help.png") no-repeat scroll right center transparent !important;
+			height: 16px !important;
+			left: 128px !important;
+			position: absolute !important;
+			top: -1px !important;
+			width: 16px !important;
+		}
+
+			html body div#ouannotate-wrapper #ouannotate-toolbar-links-help a:hover {
+				text-decoration: underline !important;
+			}
+
+			html body div#ouannotate-wrapper #ouannotate-toolbar-links-help a:active {
+				text-decoration: underline !important;
+			}
+
+/*
+ * Highlight styling 
+ */
+html body ou {
+	display: inline !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	outline: none !important;
+
+	float: none !important;
+	clear: none !important;
+	position: static !important;
+	top: auto !important;
+	left: auto !important;
+	bottom: auto !important;
+	right: auto !important;
+
+	font-family: inherit !important;
+	font-size: inherit !important;
+	font-weight: inherit !important;
+	font-style: normal !important; /* Italic fonts cause issues */
+	line-height: inherit !important;
+	vertical-align: inherit !important;
+	text-decoration: inherit !important;
+	text-align: inherit !important;
+	text-indent: inherit !important;
+	text-transform: inherit !important;
+	color: inherit !important;
+	letter-spacing: inherit !important;
+	word-spacing: inherit !important;
+	white-space: inherit !important;
+
+	background: inherit !important;
+	visibility: inherit !important;
+	z-index: inherit !important;
+}
+	
+	html body ou.red {
+		background: #FFCDCF !important;
+		color: black !important;
+	}
+	
+	html body ou.yellow {
+		background: #FFFFAA !important;
+		color: black !important;
+	}
+	
+	html body ou.blue {
+		background: #CEECFF !important;
+		color: black !important;
+	}
+	
+	html body ou.transparent {
+		background: transparent !important;
+	}
+
+/*
+ * Highlight delete prompt styling
+ */
+
+.ouannotate-highlight-delete {
+	background-color:#000;
+	color:#fff;
+	padding:5px;
+	margin-top:-12px;
+}
+
+/*
+ * Pin Styling
+ */
+
+html body div#ouannotate-wrapper div.ouannotate-pin {
+	width:26px !important;
+	height:35px !important;
+	background: transparent no-repeat !important;
+	
+	position:absolute !important;
+	top: 20px !important;
+	left: 20px !important;
+	
+	cursor: pointer !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin {
+	top: 142px !important;
+	left: 15px !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.broken {
+	top: 100px !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.broken.right,
+html body div#ouannotate-wrapper div.ouannotate-pin.mine.right,
+html body div#ouannotate-wrapper div.ouannotate-pin.shared.right {
+	left: 30px !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.anchored {
+	margin-left:-11.5px !important;
+	margin-top:-29px !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.left,
+html body div#ouannotate-wrapper div.ouannotate-pin.right {
+	width: 51px !important;
+	margin-left: -24.5px !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.mine {
+	background-image: url(../images/my_public_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.mine.left {
+	background-image: url(../images/left_my_public_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.mine.right {
+	background-image: url(../images/right_my_public_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.mine.locked {
+	background-image: url(../images/my_private_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.mine.locked.left {
+	background-image: url(../images/left_my_private_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.mine.locked.right {
+	background-image: url(../images/right_my_private_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.mine.locked.broken {
+	background-image: url(../images/broken_my_public_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.mine.unlocked.broken {
+	background-image: url(../images/broken_my_public_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.broken.mine.unlocked.right {
+	background-image: url(../images/right_broken_my_public_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.broken.mine.locked.right {
+	background-image: url(../images/right_broken_my_private_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.bookmark.mine.unlocked.right {
+	background-image: url(../images/right_bookmark_my_public.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.bookmark.mine.locked.right {
+	background-image: url(../images/right_bookmark_my_private.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.bookmark.mine.locked {
+	background-image: url(../images/bookmark_my_private.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.bookmark.mine.unlocked {
+	background-image: url(../images/bookmark_my_public.png) !important;
+}
+
+
+
+/* Shared pin styling */
+
+html body div#ouannotate-wrapper div.ouannotate-pin.shared {
+	background-image: url(../images/shared_public_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.shared.left {
+	background-image: url(../images/left_shared_public_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.shared.right {
+	background-image: url(../images/right_shared_public_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.shared.unlocked.broken {
+	background-image: url(../images/broken_shared_public_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.shared.locked {
+	background-image: url(../images/shared_private_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.shared.locked.left {
+	background-image: url(../images/left_shared_private_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.shared.locked.right {
+	background-image: url(../images/right_shared_private_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.shared.locked.broken {
+	background-image: url(../images/broken_shared_private_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.hidden {
+	display:none !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.broken.shared.unlocked.right {
+	background-image: url(../images/right_broken_shared_public_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.broken.shared.locked.right {
+	background-image: url(../images/right_broken_shared_private_pin.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.bookmark.shared.unlocked.right {
+	background-image: url(../images/right_bookmark_shared_public.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.bookmark.shared.locked.right {
+	background-image: url(../images/right_bookmark_shared_private.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.bookmark.shared.locked {
+	background-image: url(../images/bookmark_shared_private.png) !important;
+}
+
+html body div#ouannotate-wrapper div.ouannotate-pin.bookmark.shared.unlocked {
+	background-image: url(../images/bookmark_shared_public.png) !important;
+}
+
+				
+				
+/* Dialogue styling */
+html body div#ouannotate-wrapper div.ou-dialogue {
+	width: 331px !important;
+}
+
+
+/* Dialogue styling - HEADER */
+html body div#ouannotate-wrapper div.ou-dialogue-header {
+	background: transparent url(../images/comment_header_bg.png) no-repeat center center !important;
+	width: 331px !important;
+	height: 39px !important;
+	position:relative !important;
+}
+
+	/* Pin styling */
+	html body div#ouannotate-wrapper div.ou-dialogue-pin {
+		width:26px !important;
+		height:35px !important;
+		background: transparent no-repeat !important;
+		position:absolute !important;
+		top: 5px !important;
+		left: 5px !important;
+	}
+	
+		html body div#ouannotate-wrapper div.ou-dialogue-pin.mine {
+			background-image: url(../images/my_public_pin.png) !important;
+		}
+
+		html body div#ouannotate-wrapper div.ou-dialogue-pin.mine.locked {
+			background-image: url(../images/my_private_pin.png) !important;
+		}
+
+		html body div#ouannotate-wrapper div.ou-dialogue-pin.shared {
+			background-image: url(../images/shared_public_pin.png) !important;
+		}
+
+		html body div#ouannotate-wrapper div.ou-dialogue-pin.shared.locked {
+			background-image: url(../images/shared_private_pin.png) !important;
+		}
+
+		/* Bookmark Pin styling */
+
+		html body div#ouannotate-wrapper div.ou-dialogue-pin.bookmark.mine {
+			background-image: url(../images/bookmark_my_public.png) !important;
+		}
+
+		html body div#ouannotate-wrapper div.ou-dialogue-pin.bookmark.mine.locked {
+			background-image: url(../images/bookmark_my_private.png) !important;
+		}
+
+		html body div#ouannotate-wrapper div.ou-dialogue-pin.bookmark.shared {
+			background-image: url(../images/bookmark_shared_public.png) !important;
+		}
+
+		html body div#ouannotate-wrapper div.ou-dialogue-pin.bookmark.shared.locked {
+			background-image: url(../images/bookmark_shared_private.png) !important;
+		}
+
+		html body div#ouannotate-wrapper div.ou-dialogue-pin.bookmark.mine.right {
+			background-image: url(../images/right_bookmark_my_public.png) !important;
+		}
+	
+	/* Visibility info */
+	html body div#ouannotate-wrapper div.ou-dialogue-info {
+		position:absolute !important;
+		top: 0px !important;
+		left: 34px !important;
+		font-size:12px !important;
+    color: white !important;
+		height: 39px !important;
+		line-height: 39px !important;
+	}
+
+		html body div#ouannotate-wrapper div.ou-dialogue-info span {
+			font-size:12px !important;
+			color: white !important;
+		}
+
+	/* Close button */
+	html body div#ouannotate-wrapper div.ou-dialogue-close-button {
+		background: transparent url(../images/comment_header_close.png) no-repeat center center !important;
+		width: 22px !important;
+		height: 39px !important;
+		cursor: pointer !important;
+		position:absolute !important;
+		left: 301px !important;
+		top: 0px !important;
+	}
+	
+		/* @TODO add hover state */
+		html body div#ouannotate-wrapper div.ou-dialogue-close-button:hover {
+			background-image: url(../images/comment_header_close.png) !important;
+		}
+
+		/* @TODO add click state */
+		html body div#ouannotate-wrapper div.ou-dialogue-close-button:active {
+			background-image: url(../images/comment_header_close.png) !important;
+		}
+		
+		
+/* Dialogue styling - MAIN */
+html body div#ouannotate-wrapper div.ou-dialogue-main {
+	background-color: #000 !important;
+	padding: 0px 6px !important;
+}
+
+	/* Generic comment area styles */
+	html body div#ouannotate-wrapper .ou-dialogue-comments {
+		overflow-y: scroll !important;
+	}
+	
+		/* Generic individual comment styles */
+		html body div#ouannotate-wrapper div.ouannotate-comment {
+			height: 112px !important;
+			overflow: hidden !important;
+		}
+
+		html body div#ouannotate-wrapper div.ouannotate-comment-body {
+			overflow-y:scroll !important;
+			padding: 4px 0 !important;
+			background-color: #fff !important;
+			height: 64px !important;
+		}
+
+		html body div#ouannotate-wrapper span.ouannotate-comment-who,
+		html body div#ouannotate-wrapper span.ouannotate-comment-who span {
+			font-weight: bold !important;
+		}
+
+		html body div#ouannotate-wrapper span.ouannotate-comment-when,
+		html body div#ouannotate-wrapper span.ouannotate-comment-when span {
+			font-size:10px !important;
+		}
+
+		html body div#ouannotate-wrapper div.ouannotate-comment-text {
+			padding-top: 2px !important;
+			line-height:16px !important;
+		}
+		
+		html body div#ouannotate-wrapper .ouannotate-comment-footer {
+			padding-top: 5px !important;
+		}
+
+			html body div#ouannotate-wrapper div.ou-dialogue .ouannotate-comment-dialog-button {
+				font-size: 11px !important;
+				display: block !important;
+				cursor: pointer !important;
+				width: 42px !important;
+				height: 16px !important;
+				line-height: 15px !important;
+				vertical-align: middle !important;
+				color:white !important;
+				text-align: center !important;
+				background-color: #222222 !important;
+				border: 1px solid #cccccc !important;
+				border-radius: 4px !important;
+			}
+
+				html body div#ouannotate-wrapper div.ou-dialogue .ouannotate-comment-dialog-button:hover {
+					text-decoration: underline !important;
+				}
+
+				html body div#ouannotate-wrapper div.ou-dialogue .ouannotate-comment-dialog-button:active {
+					text-decoration: underline !important;
+				}
+
+			html body div#ouannotate-wrapper div.ou-dialogue .ouannotate-comment-alert {
+				float: right !important;
+			}
+
+			html body div#ouannotate-wrapper div.ou-dialogue .ouannotate-comment-dialog-rollover {
+				float:left !important;
+				line-height: 20px !important;
+				height: 20px !important;
+				padding:0 5px !important;
+
+				-moz-border-radius: 2px !important;
+				border-radius: 2px !important;
+
+				color: white !important;
+				text-decoration: none !important;
+			}
+
+				html body div#ouannotate-wrapper div.ou-dialogue .ouannotate-comment-dialog-rollover:hover {
+					background-color: #4A4A4A !important;
+				}
+
+	
+	/* My comments area */
+	html body div#ouannotate-wrapper .ou-dialogue-my {
+		padding-bottom: 4px !important;
+		border-bottom:1px solid #fff !important;
+		margin-bottom: 4px !important;
+	}
+		html body div#ouannotate-wrapper .not-has-shared .ou-dialogue-my {
+			margin-bottom: 0px !important;
+		}
+	
+		html body div#ouannotate-wrapper .not-has-mine .ou-dialogue-my {
+			display: none !important;
+		}
+	
+		html body div#ouannotate-wrapper .ou-dialogue-my .ou-dialogue-comments {
+			height: 112px !important;
+			margin-left: -4px !important;
+		}
+		
+		/* My individual comments */
+		html body div#ouannotate-wrapper .ou-dialogue-my .ouannotate-comment-main {
+			float: left !important;
+			width: 292px !important;
+			padding: 5px 0 5px 4px !important;
+			background-color: #abde88 !important;
+		}
+		
+			html body div#ouannotate-wrapper .ou-dialogue-my .ouannotate-comment-body {
+				float: left !important;
+				width: 256px !important;
+				padding-left: 4px !important;
+				padding-right: 4px !important;
+			}
+		
+			html body div#ouannotate-wrapper .ouannotate-comment-aside {
+				float: left !important;
+				height: 72px !important;
+				width: 20px !important;
+			}
+
+				html body div#ouannotate-wrapper .ouannotate-comment-aside-delete {
+					background: transparent url('../images/oua_delete.png') no-repeat center right !important;
+					height: 12px !important;
+					cursor: pointer !important;
+				}
+
+				html body div#ouannotate-wrapper .ouannotate-comment-aside-visibility {
+					background: transparent url('../images/oua_unlock.png') no-repeat center right !important;
+					height: 12px !important;
+					cursor: pointer !important;
+					margin-top: 48px !important;
+					margin-left: 2px !important;
+				}
+
+					html body div#ouannotate-wrapper .ouannotate-comment-aside-visibility.locked {
+						background: transparent url('../images/oua_lock.png') no-repeat center right !important;
+					}
+			
+		html body div#ouannotate-wrapper .ou-dialogue-my .ouannotate-comment-footer {
+			clear:left !important;
+			margin-left: 4px !important;
+		}
+		
+	/* Shared comments area */
+	html body div#ouannotate-wrapper .not-has-shared .ou-dialogue-shared .ou-dialogue-comments {
+		display: none !important;
+	}
+
+	html body div#ouannotate-wrapper .has-one-shared .ou-dialogue-shared .ou-dialogue-comments {
+		height: 113px !important;
+	}
+
+	html body div#ouannotate-wrapper .has-two-shared .ou-dialogue-shared .ou-dialogue-comments {
+		height: 226px !important;
+	}
+
+	html body div#ouannotate-wrapper .has-more-shared.not-has-mine .ou-dialogue-shared .ou-dialogue-comments {
+		height: 339px !important;
+	}
+
+	html body div#ouannotate-wrapper .has-more-shared.has-mine .ou-dialogue-shared .ou-dialogue-comments {
+		height: 226px !important;
+	}
+		
+		/* Shared individual comments */
+		html body div#ouannotate-wrapper .ou-dialogue-shared .ouannotate-comment {
+			width: 292px !important;
+			border-bottom: 1px solid #fff !important;
+		}
+
+			html body div#ouannotate-wrapper .ou-dialogue-shared .ouannotate-comment-body {
+				padding-left: 4px !important;
+				padding-right: 4px !important;
+				margin: 5px 0 !important;
+			}
+
+			html body div#ouannotate-wrapper .ou-dialogue-shared .ouannotate-comment-footer {
+				height: 25px !important;
+			}
+
+			
+/* Dialogue styling - FOOTER */
+html body div#ouannotate-wrapper div.ou-dialogue-footer {
+		background:transparent url('../images/comment_footer_bg.png') no-repeat bottom center !important;
+		width: 331px !important;
+		padding-bottom:7px !important;
+		float: left !important;
+}
+
+	html body div#ouannotate-wrapper div.ou-dialogue-footer .ou-dialogue-comment-count {
+		font-size:12px !important;
+		color: white !important;
+		background: #000 !important;
+		text-align: right !important;
+		padding: 4px 32px 0 0 !important;
+	}
+
+	html body div#ouannotate-wrapper div.ou-dialogue-footer .ou-dialogue-comment-count.hidden {
+		display:none !important;
+	}
